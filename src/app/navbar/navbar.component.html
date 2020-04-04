@@ -1,0 +1,11 @@
+<nav>
+    <span class="logo" routerLink="login"><i class="far fa-comments"></i>Chat App</span>
+  <ul *ngIf="!loggedIn">
+    <li routerLink="login">Login</li>
+    <li routerLink="sign-up">Sign Up</li>
+  </ul>
+  <ul *ngIf="loggedIn">
+    <li routerLink="sign-up" (click)="logout()">Logout</li>
+  </ul>
+</nav>
+<button (click)="check()">Check</button>

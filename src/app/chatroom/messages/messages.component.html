@@ -1,0 +1,5 @@
+<ul *ngFor="let message of messages | async">
+  <li >{{ message.user }}</li>
+  <li >{{ message.text }}</li>
+  <li >{{ message.date.seconds * 1000 | date: 'dd-MM-yyyy, h:mm:ss a'}}</li>
+</ul>

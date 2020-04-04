@@ -1,0 +1,9 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+}
+
+.container:nth-child(1) {
+  height: 80%;
+  background: teal;
+}
