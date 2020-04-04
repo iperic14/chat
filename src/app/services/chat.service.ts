@@ -38,5 +38,6 @@ export class ChatService {
   }
   checkUsername() {
     return this.usersRef.valueChanges();
+    //something
   }
 }
