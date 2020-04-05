@@ -25,6 +25,7 @@ export class LoginComponent implements OnInit, OnDestroy {
     this.auth.login(data.email, data.password);
   }
   check() {
+    // console.log('clicked');
     // console.log(this.af.auth.currentUser);
     // console.log(this.auth.check());
   }
